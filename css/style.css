@@ -3,6 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #111;
+    color: white;
 }
 
 .tetris-grid {
@@ -10,7 +12,8 @@ body {
     grid-template-columns: repeat(10, 30px);
     grid-template-rows: repeat(20, 30px);
     gap: 1px;
-    background-color: #111;
+    background-color: #000;
+    margin-bottom: 15px;
 }
 
 .tetris-grid div {
@@ -18,4 +21,14 @@ body {
     height: 30px;
     background-color: #222;
     border: 1px solid #333;
+}
+
+.tetromino {
+    background-color: cyan !important;
+    border: 1px solid #0ff;
+}
+
+.taken {
+    background-color: gray !important;
+    border: 1px solid #666;
 }
