@@ -49,7 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
         [width, width + 1, width + 2, width + 3]
     ];
 
-    const tetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino];
+    const sTetromino = [
+        [1, 2, width, width + 1],
+        [0, width, width + 1, width * 2 + 1],
+        [1, 2, width, width + 1],
+        [0, width, width + 1, width * 2 + 1]
+    ];
+
+    const jTetromino = [
+        [0, width, width * 2, width * 2 + 1],        // rotation 0
+        [width, width + 1, width + 2, 2],            // rotation 1
+        [0, 1, width + 1, width * 2 + 1],            // rotation 2
+        [width, width * 2, width * 2 + 1, width * 2 + 2]  // rotation 3
+    ];
+
+    const tetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino, sTetromino, jTetromino];
 
     let currentPosition = 4;
     let currentRotation = 0;
